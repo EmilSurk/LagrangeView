@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <style>
+        body{
+            font-size: 1.5em;
+            text-align: center;
+        }
+        ul {
+            display: table;
+            margin: 0 auto;
+            text-align: left;
+        }
+    </style>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.157.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.157.0/examples/jsm/"
+            }
+        }
+    </script>
+
+    <script type="module" src="tp2.js"></script>
+
+</head>
+
+<body>
+<h1>Telescope James Webb</h1>
+<canvas id="canvas" width="1024" height="576"></canvas>
+<p>
+    <b>Légende :</b> Points de Lagrange L1 (<span style="color:Red">rouge</span>), L2 (<span style="color:Green">vert</span>), L3 (<span style="color:blue">bleu</span>), L4 (<span style="background-color:yellow">jaune</span>) et L5 (<span style="background-color:cyan">cyan</span>) pour le système Terre-Soleil.
+</p>
+<label class="switch">
+    <input type="checkbox" id="toggleAnimation" checked>
+    <span >Animate</span>
+</label>
+<label class="switch">
+    <input type="checkbox" id="toggleGizmo">
+    <span>Arcball Gizmo</span>
+</label>
+<label class="switch">
+    <input type="checkbox" id="toggleViewlight">
+    <span>Camera Viewlight</span>
+</label>
+    <input type="range" min="0" max="100" value="0" id="controlAmbientLight">
+    <span>AmbientLight</span>
+</body>
