@@ -1,5 +1,7 @@
 # LagrangeView: A 3D Visualization of the James-Webb Space Telescope Orbit
 
+<img src="universe-visualization.png" alt="Universe Visualization" width="400"/>
+
 **LagrangeView** is an educational and interactive 3D representation of the James-Webb Space Telescope's orbit around the second Lagrange point (L2) of the Earth-Sun system. This project is developed using the powerful WebGL library, Three.js, along with Blender for 3D modeling, bringing to life the celestial mechanics that keep the JWST in a stable position to observe the universe.
 
 ## Features
